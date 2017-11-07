@@ -1,0 +1,112 @@
+baseURL = "http://idees.io/"
+languageCode = "en-us"
+title = "Idees"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Idees"
+	description = "A markdown editor which support several cloud file storage backends."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation.brand]
+		image = "![Idees](idees.png)"
+		name = "Idees"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Advantages"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Idees"
+		subtitle   = "[Idees](//idees.io) A markdown editor which support several cloud file storage backends."
+
+		[params.hero.button]
+		    text = "Download Now"
+		    link = "//github.com/idees/idees/releases/latest"
+
+
+	# About section
+	[params.about]
+		headline    = "We've got what you need!"
+		description = "In our daily life, we have so many idées to write down, and many of us are suffering from the work of complicated text formatting. We usually save our data on many cloud file storage service, such as Dropbox, Google drive, 百度云, and so on. But what has happened did prove that these cloud storage is not reliable.  \n **Makrdown** is a lightweight markup language which is a great way to save us from it.   \n [Idees](//idees.io) is a **markdown editor** and support these **self deployed file storage services**."
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "Advantages"
+
+        [[params.services.list]]
+            icon = "fa-pencil"
+            title = "Markdown"
+            description = "Full Makrdown language support!"
+
+        [[params.services.list]]
+			icon = "fa-mixcloud"
+			title = "Multi File Backend"
+			description = "Local, Webdav, Owncloud, Nextcloud, 坚果云, and so on."
+
+		[[params.services.list]]
+            icon = "fa-tv"
+            title = "Real Time Preview"
+            description = "Writing, Previewing, Enjoying"
+
+        [[params.services.list]]
+            icon = "fa-search"
+            title = "Content Searching"
+            description = "Find your idées? You got the way."
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Get Idees for your idées"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "//github.com/idees/idees/releases/latest"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "New improvements suggestion for Idees? That's great! Write us an [issue](https://github.com/idees/idees/issues/new) or send us an email and we will get back to you as soon as possible!"
+		github = "https://github.com/idees/idees"
+		email = "t.post@hotmail.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""
